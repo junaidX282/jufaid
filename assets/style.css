@@ -887,3 +887,7 @@ footer::before {
   }
 }
 /* footer me */
+
+.loc-icon img, .detail-icon img, .s-detail-icon img {
+    width: 20px;
+}
