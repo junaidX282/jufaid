@@ -620,7 +620,7 @@ footer::before {
   font-family:'Scheherazade New',serif; font-size:20px; color:#d4a84b;
   direction:rtl; margin-bottom:8px;
 }
-.footer-dua-trans { font-family:'EB Garamond',serif; font-style:italic; font-size:14px; color:#6b8c5a; margin-bottom:40px; }
+.footer-dua-trans { font-family:'EB Garamond',serif; font-style:italic; font-size:14px; color:#d4a956; margin-bottom:40px; }
 .footer-sep { width:1px; height:40px; background:linear-gradient(to bottom,transparent,#3a6030,transparent); margin:0 auto 30px; }
 .footer-dev {
   font-size:11px; letter-spacing:3px; color:#3a5030;
@@ -770,9 +770,9 @@ footer::before {
     margin-bottom: 0;
 }
 .testimonial__section .testi__items .testi__content p {
-    /* text-transform: uppercase; */
     font-weight: 600;
-    color: var(--theme-color);
+    color: #5d5d5d;
+    font-size: 14px;
 }
 
 @media(max-width: 567px){
