@@ -136,7 +136,7 @@ nav {
   position: fixed; top:0; left:0; right:0; z-index:100;
   padding: 14px 40px;
   display: flex; align-items: center; justify-content: space-between;
-  background: rgba(250,246,239,0.92);
+  background:rgb(250 246 239 / 0%);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(184,134,11,0.15);
   transition: box-shadow 0.3s;
@@ -150,7 +150,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(45,74,42,0.1); }
 .nav-links { display:flex; gap:28px; list-style:none; }
 .nav-links a {
   font-size: 11px; letter-spacing:3px; text-transform:uppercase;
-  color: var(--text-mid); text-decoration:none;
+  color: #efa543; text-decoration:none;
   transition: color 0.3s;
 }
 .nav-links a:hover { color: var(--gold); }
@@ -325,7 +325,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(45,74,42,0.1); }
 
 /* slider navigation */
 .slider-nav {
-  position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
+  position:absolute; bottom:70px; left:50%; transform:translateX(-50%);
   display:flex; align-items:center; gap:18px; z-index:10;
 }
 .slider-arrow {
