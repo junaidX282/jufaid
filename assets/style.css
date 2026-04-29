@@ -920,6 +920,7 @@ footer::before {
   padding: 28px 20px 24px;
   position: relative;
   overflow: hidden;
+  border-radius: 14px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .fm-card:hover {
