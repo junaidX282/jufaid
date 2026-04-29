@@ -621,7 +621,7 @@ footer::before {
   direction:rtl; margin-bottom:8px;
 }
 .footer-dua-trans { font-family:'EB Garamond',serif; font-style:italic; font-size:14px; color:#d4a956; margin-bottom:40px; }
-.footer-sep { width:1px; height:40px; background:linear-gradient(to bottom,transparent,#3a6030,transparent); margin:0 auto 30px; }
+.footer-sep { width:1px; height:40px; background:linear-gradient(to bottom, transparent, #ffc107, transparent); margin:0 auto 30px; }
 .footer-dev {
   font-size:11px; letter-spacing:3px; color:#3a5030;
   text-transform:uppercase;
@@ -890,4 +890,158 @@ footer::before {
 
 .loc-icon img, .detail-icon img, .s-detail-icon img {
     width: 20px;
+}
+
+
+ 
+/* ── FAMILY MEMBERS SECTION ── */
+#family-members {
+  background: var(--cream);
+  padding: 90px 20px;
+  position: relative;
+  overflow: hidden;
+}
+#family-members::before {
+  content:''; position:absolute; top:-1px; left:0; right:0; height:2px;
+  background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+}
+ 
+.family-members-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 50px;
+}
+ 
+.fm-card {
+  background: white;
+  border: 1px solid rgba(184,134,11,0.15);
+  border-radius: 3px;
+  padding: 28px 20px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.fm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(45,74,42,0.1);
+}
+.fm-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background: linear-gradient(90deg, #58141b, var(--gold-light));
+}
+.fm-card.child-card::before {
+  background: linear-gradient(90deg, #e8b4d0, #f5c6a0);
+}
+ 
+/* role badge */
+.fm-role {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(184,134,11,0.08);
+  border: 1px solid rgba(184,134,11,0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.fm-role.brother { color: var(--green-mid); background: rgba(61,107,56,0.08); border-color: rgba(61,107,56,0.2); }
+.fm-role.sister  { color: #b85a70; background: rgba(184,90,112,0.08); border-color: rgba(184,90,112,0.2); }
+.fm-role.child   { color: #c06090; background: rgba(192,96,144,0.08); border-color: rgba(192,96,144,0.2); }
+ 
+.fm-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 26px;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+ 
+.fm-spouse-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(184,134,11,0.1);
+}
+.fm-spouse-icon {
+  font-size: 13px;
+  color: var(--gold-light);
+  flex-shrink: 0;
+}
+.fm-spouse-label {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+.fm-spouse-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--text-mid);
+}
+ 
+/* child avatar */
+.fm-avatar {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f5c6e0, #f9d0b8);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  margin-bottom: 14px;
+  border: 2px solid rgba(184,134,11,0.2);
+  animation: avatarFloat 3s ease-in-out infinite;
+}
+.fm-avatar.boy {
+  background: linear-gradient(135deg, #b8d8f8, #c8e8d0);
+}
+@keyframes avatarFloat {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+ 
+.fm-age {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--text-light);
+  margin-top: 4px;
+}
+ 
+/* section divider */
+.fm-group-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 40px 0 20px;
+}
+.fm-group-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(184,134,11,0.3), transparent);
+}
+.fm-group-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+@media(min-width:580px){
+  .siblings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.little-bride-bros{
+  display:none
+}
 }
