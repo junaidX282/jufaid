@@ -797,5 +797,11 @@ revealChars(0);
 startProgress();
 slideTimer = setTimeout(() => goToSlide(1), SLIDE_DURATION);
 </script>
+
+<script>
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+</script>
 </body>
 </html>
