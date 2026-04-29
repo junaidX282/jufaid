@@ -1046,3 +1046,9 @@ footer::before {
   display:none
 }
 }
+
+@media(max-width:580px){
+ .section-title{
+  font-size: clamp(28px, 6vw, 60px) !important;
+ }
+}
